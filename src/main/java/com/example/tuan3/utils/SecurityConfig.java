@@ -40,7 +40,7 @@ public class SecurityConfig {
 
                         .permitAll()
 
-                        .requestMatchers( "/nhanviens/edit", "/nhanviens/delete")
+                        .requestMatchers( "/nhanviens/edit/**", "/nhanviens/delete/**")
 
                         .hasAnyAuthority("ADMIN")
 
